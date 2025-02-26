@@ -1,10 +1,11 @@
 import styles from "./perfil.module.css";
 
-const Perfil = () => {
+// eslint-disable-next-line react/prop-types
+const Perfil = ({children, fotoPerfil}) => {
   return (
     <div id={styles.perfil}>
-      <img src="https://placehold.co/200x200" alt="" />
-      <p>Perfil Da Pessoa</p>
+      <img src={fotoPerfil} alt="" />
+      <p>{children}</p>
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import styles from "./Links.module.css";
 
-const Links = () => {
+// eslint-disable-next-line react/prop-types
+const Links = ({children}) => {
   return (
     <li>
-      <a href="https://google.com">Google.com</a>
+      <a href="https://google.com">{children}</a>
     </li>
   );
 };
